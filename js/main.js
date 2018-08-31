@@ -161,6 +161,7 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name + ' restaurant near ' + restaurant.neighborhood;
   li.append(image);
 
   const name = document.createElement('h1');
@@ -175,13 +176,17 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
-  const more = document.createElement('a');
-  more.innerHTML = 'View Details';
-  more.href = DBHelper.urlForRestaurant(restaurant);
-  li.append(more)
+  const more = document.createElement('button');
+  const restaurantUrl = document.createElement('a');
+  restaurantUrl.innerHTML = 'View Details';
+  restaurantUrl.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = '3';
+  more.append(restaurantUrl);
+  li.append(more);
 
   return li
 }
+
 
 /**
  * Add markers for current restaurants to the map.
