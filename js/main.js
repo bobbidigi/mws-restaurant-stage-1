@@ -179,8 +179,14 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('button');
   const restaurantUrl = document.createElement('a');
   restaurantUrl.innerHTML = 'View Details';
-  restaurantUrl.href = DBHelper.urlForRestaurant(restaurant);
   more.tabIndex = '3';
+  // button onclick function for a11y
+
+  more.onclick = function() {
+    restaurantUrl.href = DBHelper.urlForRestaurant(restaurant);
+    window.location = restaurantUrl.href;
+    console.log(restaurantUrl.href);
+  }
   more.append(restaurantUrl);
   li.append(more);
 
