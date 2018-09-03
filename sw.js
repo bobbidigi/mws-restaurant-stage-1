@@ -1,3 +1,6 @@
+/*Some inspiration was recieved from the Udacity youTube video
+Project 1 MWS Webinar with Doug Brown https://www.youtube.com/watch?v=92dtrNU1GQc */
+
 const cacheID = 'restaurant-v1.2';
 
 //cach files
