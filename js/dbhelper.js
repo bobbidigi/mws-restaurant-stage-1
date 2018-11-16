@@ -13,7 +13,7 @@ class DBHelper {
   // }
 
   static get DATABASE_URL() {
-    const port = 'https://bobbidigi.github.io/mws-restaurant-stage-1' // Change this to your server port
+    const port = 'https://www.allentowngroup.com/mws-restaurant-stage-1' // Change this to your server port
     return `${port}/data/restaurants.json`;
   }
 
