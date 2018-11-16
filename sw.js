@@ -1,4 +1,4 @@
-const cacheID = 'restaurant-v1.3';
+const cacheID = 'restaurant-v1.4.1';
 
 //cach files
 const cacheFiles = [
