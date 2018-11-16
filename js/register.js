@@ -1,6 +1,6 @@
 // register service worker
 if ('serviceWorker' in navigator) {
-     navigator.serviceWorker.register('sw.js', { scope: '/' })
+     navigator.serviceWorker.register('sw.js', { scope: '/mws-restaurant-stage-1/' })
           .then(function (reg) {
 
                if (reg.installing) {
