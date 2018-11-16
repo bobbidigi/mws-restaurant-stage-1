@@ -1,8 +1,8 @@
-const cacheID = 'restaurant-v1.4.3';
+const cacheID = 'restaurant-v1.4.4';
 
 //cach files
 const cacheFiles = [
-     '/mws-restaurant-stage-1/',
+     '/',
      '/index.html',
      '/resaurant.html',
      '/css/style.css',
